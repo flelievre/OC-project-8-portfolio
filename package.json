@@ -1,0 +1,55 @@
+{
+  "name": "material-express-ssr",
+  "version": "5.0.0",
+  "private": true,
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ],
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/node": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@iconify/react": "^4.1.1",
+    "@mui/lab": "^5.0.0-alpha.144",
+    "@mui/material": "latest",
+    "babel-loader": "latest",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "latest",
+    "express": "latest",
+    "js-cookie": "^3.0.5",
+    "npm-run-all": "latest",
+    "pigeon-maps": "^0.21.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet-async": "^1.3.0",
+    "react-multi-lang": "^2.2.0",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.15.0",
+    "serialize-javascript": "^6.0.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -p build serve",
+    "build": "webpack -w",
+    "serve": "nodemon --ignore ./build --exec babel-node -- server.js",
+    "production": "cross-env NODE_ENV=production IS_EXECUTED_TRHOUGH_PROXY=1 npx babel-node server.js",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "fs": "^0.0.1-security",
+    "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^3.0.1",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
