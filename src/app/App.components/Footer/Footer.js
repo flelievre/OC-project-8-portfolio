@@ -49,7 +49,7 @@ const Footer = () => {
                   href="https://www.instagram.com/komdab_official"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('Navigate to Komdab\'s Instagram profile')}
+                  aria-label={t('Navigate to francois\'s Instagram profile')}
                 >
                   <Button size="small" aria-label={t('Navigate to Komdab\'s Instagram profile')}>
                     <Icon icon="ri:instagram-line" width={50} height={50} aria-hidden="true" />
@@ -59,7 +59,7 @@ const Footer = () => {
                   href="https://www.facebook.com/KOMDABFRANCE"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('Navigate to Komdab\'s Facebook page')}
+                  aria-label={t('Navigate to francois\'s Facebook page')}
                 >
                   <Button size="small" aria-label={t('Navigate to Komdab\'s Facebook page')}>
                     <Icon icon="bxl:facebook" width={50} height={50} aria-hidden="true" />
@@ -68,54 +68,79 @@ const Footer = () => {
               </Container>
             </Stack>
           </Grid>
-          <Grid item md={4} xs={12} component="section">
-            <Typography component="h3" variant="h5">
-              {t('Opening hours')}
-            </Typography>
-            <List disablePadding>
-              azdaz
-            </List>
+          <Grid
+            item
+            md={4}
+            xs={12}
+            component="section"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid
+              container
+              spacing={2}
+              justifyContent="center"
+              alignItems="center"
+              direction="row"
+            >
+              <Typography component="h3" variant="caption">
+                {t('Developped by François')}
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid item md={4} xs={12} component="section">
-            <Typography component="h2" variant="h5">
-              {t('Pages')}
-            </Typography>
-            <List>
-              {(routesOfLanguage
-                .filter(({
-                  showInDrawer,
-                }) => (
-                  showInDrawer
-                ))
-                .filter(({
-                  onlyIfHasReservation,
-                }) => (
-                  !onlyIfHasReservation 
-                  || (
-                    onlyIfHasReservation
-                    && hasReservation
-                  )
-                ))
-                .map(({
-                  label = '',
-                  path = '',
-                }) => (
-                  <ListItem
-                    disablePadding
-                    key={path}
-                  >
-                    <ListItemText
-                      primary={t(label)}
-                      primaryTypographyProps={{
-                        variant: 'body1',
-                        component: ReactRouterLink,
-                        to: generateAppRoute({ route: path.replace(/\/:lang\//, '') }),
-                      }}
-                    />
-                  </ListItem>
-                ))
-              )}
-            </List>
+          <Grid
+            item
+            md={4}
+            xs={12}
+            component="section"
+          >
+            <Grid
+              container
+              spacing={2}
+              justifyContent="flex-end"
+              alignItems="flex-end"
+              direction="column"
+            >
+              <Typography component="h2" variant="h5">
+                {t('Pages')}
+              </Typography>
+              <List>
+                {(routesOfLanguage
+                  .filter(({
+                    showInDrawer,
+                  }) => (
+                    showInDrawer
+                  ))
+                  .filter(({
+                    onlyIfHasReservation,
+                  }) => (
+                    !onlyIfHasReservation 
+                    || (
+                      onlyIfHasReservation
+                      && hasReservation
+                    )
+                  ))
+                  .map(({
+                    label = '',
+                    path = '',
+                  }) => (
+                    <ListItem
+                      disablePadding
+                      key={path}
+                    >
+                      <ListItemText
+                        primary={t(label)}
+                        primaryTypographyProps={{
+                          variant: 'body1',
+                          component: ReactRouterLink,
+                          to: generateAppRoute({ route: path.replace(/\/:lang\//, '') }),
+                        }}
+                      />
+                    </ListItem>
+                  ))
+                )}
+              </List>
+            </Grid>
           </Grid>
         </Grid>
       </Container>

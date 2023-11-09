@@ -231,8 +231,8 @@ const HomePage = () => {
               sm={4}
             >
               <CardWithImage
-                imageUrl="https://firebasestorage.googleapis.com/v0/b/ubar-firebase-prod.appspot.com/o/website%2Fkomdab-livraison-restaurant-pour-entreprise.png?alt=media&token=6667d9c2-4ecc-4ff0-8afe-874996d6a7b8&_gl=1*1jhxidz*_ga*ODk0MDA1MDg5LjE2ODYwNjA2ODA.*_ga_CW55HF8NVT*MTY5OTAzNTgxOS4zMjAuMS4xNjk5MDM3MDk1LjQyLjAuMA.."
-                imageAlt="Happy restaurateur using Komdab as Click and Collect and Delivery solution for restaurants"
+                imageUrl=""
+                imageAlt=""
                 header="Booki"
                 description="Travel agency website"
                 t={t}
@@ -245,8 +245,8 @@ const HomePage = () => {
               sm={4}
             >
               <CardWithImage
-                imageUrl="https://firebasestorage.googleapis.com/v0/b/ubar-firebase-prod.appspot.com/o/website%2Fkomdab-livraison-pour-restaurant.png?alt=media&token=0daa89b4-365a-402b-9289-d3e7e2c84705&_gl=1*oj9nbw*_ga*ODk0MDA1MDg5LjE2ODYwNjA2ODA.*_ga_CW55HF8NVT*MTY5OTAzNTgxOS4zMjAuMS4xNjk5MDM2NDUzLjQ1LjAuMA.."
-                imageAlt="Happy restaurateur using Komdab as Click and Collect and Delivery solution for restaurants"
+                imageUrl=""
+                imageAlt=""
                 header="Sophie Bluel"
                 description="Interior architect portfolio"
                 t={t}
@@ -259,8 +259,8 @@ const HomePage = () => {
               sm={4}
             >
               <CardWithImage
-                imageUrl="https://firebasestorage.googleapis.com/v0/b/ubar-firebase-prod.appspot.com/o/website%2Fkomdab-livraison-pour-restaurant.png?alt=media&token=0daa89b4-365a-402b-9289-d3e7e2c84705&_gl=1*oj9nbw*_ga*ODk0MDA1MDg5LjE2ODYwNjA2ODA.*_ga_CW55HF8NVT*MTY5OTAzNTgxOS4zMjAuMS4xNjk5MDM2NDUzLjQ1LjAuMA.."
-                imageAlt="Happy restaurateur using Komdab as Click and Collect and Delivery solution for restaurants"
+                imageUrl=""
+                imageAlt=""
                 header="Nina Carducci"
                 description="Photographer portfolio"
                 t={t}
@@ -273,8 +273,8 @@ const HomePage = () => {
               sm={4}
             >
               <CardWithImage
-                imageUrl="https://firebasestorage.googleapis.com/v0/b/ubar-firebase-prod.appspot.com/o/website%2Fkomdab-livraison-pour-restaurant.png?alt=media&token=0daa89b4-365a-402b-9289-d3e7e2c84705&_gl=1*oj9nbw*_ga*ODk0MDA1MDg5LjE2ODYwNjA2ODA.*_ga_CW55HF8NVT*MTY5OTAzNTgxOS4zMjAuMS4xNjk5MDM2NDUzLjQ1LjAuMA.."
-                imageAlt="Happy restaurateur using Komdab as Click and Collect and Delivery solution for restaurants"
+                imageUrl=""
+                imageAlt=""
                 header="Kasa"
                 description="Property rental web application"
                 t={t}
@@ -287,8 +287,8 @@ const HomePage = () => {
               sm={4}
             >
               <CardWithImage
-                imageUrl="https://firebasestorage.googleapis.com/v0/b/ubar-firebase-prod.appspot.com/o/website%2Fkomdab-livraison-pour-restaurant.png?alt=media&token=0daa89b4-365a-402b-9289-d3e7e2c84705&_gl=1*oj9nbw*_ga*ODk0MDA1MDg5LjE2ODYwNjA2ODA.*_ga_CW55HF8NVT*MTY5OTAzNTgxOS4zMjAuMS4xNjk5MDM2NDUzLjQ1LjAuMA.."
-                imageAlt="Happy restaurateur using Komdab as Click and Collect and Delivery solution for restaurants"
+                imageUrl=""
+                imageAlt=""
                 header="Mon Vieux Grimoir"
                 description="Book review social network"
                 t={t}
