@@ -11,7 +11,6 @@ const TechnologiesLogos = ({
     sx={{
       boxSizing: 'border-box',
       maxWidth: '100vw',
-      background: 'white',
       mb: 4,
     }}
   >

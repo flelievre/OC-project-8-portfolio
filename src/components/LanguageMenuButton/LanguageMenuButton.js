@@ -94,7 +94,7 @@ const LanguageMenuButton = () => {
               <Icon
                 icon={icon}
                 style={{
-                  marginLeft: '10px',
+                  marginRight: '10px',
                 }}
               />
               {t(lang)}

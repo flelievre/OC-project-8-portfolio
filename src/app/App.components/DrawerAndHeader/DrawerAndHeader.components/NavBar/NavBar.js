@@ -47,10 +47,11 @@ const NavBar = ({
     isAppLoading,
     isPageAtTop,
     isInDarkTheme,
+    redirectAppTo,
   } = useNavBar();
 
   console.log({
-    isPageAtTop,
+    route: routes.HOME,
   });
 
   return (
@@ -70,7 +71,7 @@ const NavBar = ({
             width: 175,
             cursor: 'pointer',
           }}
-          onClick={() => redirectAppTo({ route: routes.HOME })}
+          onClick={() => redirectAppTo({ route: '' })}
         />
 
         <PageResponsiveTitle />

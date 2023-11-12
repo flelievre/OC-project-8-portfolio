@@ -24,6 +24,9 @@ import {
   TechnologiesLogos,
   TitlesSection,
 } from './HomePage.components';
+import {
+  PROJECTS_INFOS,
+} from './HomePage.constants';
 
 const HomePage = () => {
   const {
@@ -33,6 +36,7 @@ const HomePage = () => {
     contactRouteUrl,
     demoLink,
     contactLink,
+    generateAppRoute,
   } = useHomePage() || {};
   return (
     <>
@@ -225,76 +229,30 @@ const HomePage = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Grid
-              item
-              xs={12}
-              sm={4}
-            >
-              <CardWithImage
-                imageUrl=""
-                imageAlt=""
-                header="Booki"
-                description="Travel agency website"
-                t={t}
-                imageMaxWidth={110}
-              />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-            >
-              <CardWithImage
-                imageUrl=""
-                imageAlt=""
-                header="Sophie Bluel"
-                description="Interior architect portfolio"
-                t={t}
-                imageMaxWidth={150}
-              />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-            >
-              <CardWithImage
-                imageUrl=""
-                imageAlt=""
-                header="Nina Carducci"
-                description="Photographer portfolio"
-                t={t}
-                imageMaxWidth={150}
-              />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-            >
-              <CardWithImage
-                imageUrl=""
-                imageAlt=""
-                header="Kasa"
-                description="Property rental web application"
-                t={t}
-                imageMaxWidth={150}
-              />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-            >
-              <CardWithImage
-                imageUrl=""
-                imageAlt=""
-                header="Mon Vieux Grimoir"
-                description="Book review social network"
-                t={t}
-                imageMaxWidth={150}
-              />
-            </Grid>
+            {PROJECTS_INFOS.map(({
+              name = '',
+              description = '',
+              link = '',
+              text = ''
+            }) => (
+              <Grid
+                key={link}
+                item
+                xs={12}
+                sm={4}
+              >
+                <CardWithImage
+                  imageUrl=""
+                  imageAlt=""
+                  header={name}
+                  description={description}
+                  buttonLink={generateAppRoute({ route: `projects/${link}` })}
+                  buttonText={text}
+                  t={t}
+                  imageMaxWidth={110}
+                />
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Grid>

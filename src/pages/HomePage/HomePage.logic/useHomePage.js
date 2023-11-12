@@ -11,6 +11,7 @@ const useHomePage = () => {
     currentLanguage,
     theme,
     contactRouteUrl = '',
+    generateAppRoute,
   } = useContext(WebAppContext);
 
   // const {
@@ -26,6 +27,7 @@ const useHomePage = () => {
     currentLanguage,
     theme,
     contactRouteUrl,
+    generateAppRoute,
   };
 };
 

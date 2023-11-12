@@ -93,18 +93,18 @@ const useContactPagePageLogic = () => {
       incrementNbFormSubmissionCounter();
     } else if (!isSent) {
       try {
-        const response = await fetch('https://backend.komdab.net/dispatchNotifications', {
+        const response = await fetch('http://localhost:4000/contact', {
           method: 'POST',
           headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            useCase: 'alertingSendSlackNotification',
-            useCaseInputs: {
-              text: `🌍🏡${name} 🗣${message}   | 👨‍🎨${firstName} ${lastName} 💌${email} ☎️${phoneNumber}`,
-              avoidSpamKey: 'komdab-kit-press-downloaded',
-            },
+            email,
+            message,
+            firstName,
+            lastName,
+            phoneNumber,
           }),
         });
         setMessageSentStatus();

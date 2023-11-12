@@ -119,22 +119,6 @@ const MyDrawer = ({
               />
             ))}
           </List>
-          <List className="pl-40">
-            <ListItem disablePadding>
-              <ListItemText
-                primary={t('Address')}
-                primaryTypographyProps={{
-                  className: 'fw-800'
-                }}
-              />
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemText primary={`${streetNumber} ${route}`} />
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemText primary={`${postalCode} ${city}`} />
-            </ListItem>
-          </List>
         </Box>
       </Drawer>
     </Box>

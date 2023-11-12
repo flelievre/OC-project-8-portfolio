@@ -10,12 +10,14 @@ const useFooter = () => {
     t = (s) => s,
     routesOfLanguage = [],
     generateAppRoute = () => {},
+    redirectAppTo,
   } = useContext(WebAppContext) || {};
 
   return {
     t,
     routesOfLanguage,
     generateAppRoute,
+    redirectAppTo,
   };
 };
 

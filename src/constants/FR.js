@@ -34,7 +34,8 @@ const FR = {
   'Certified “Offensive Security Certified Pentester“ by OffSec, apps I develop respect OWASP secure development best practices': 'Certifié "Offensive Security Certified Pentester" par OffSec, les applications web que je développe respectent les pratiques de développement sécurisé de l\'OWASP',
   'Web development technologies I master': 'Les technologies de développement web que je maîtrise',
   'are necessarily adapted to your web applications and sites development needs': 'sont forcément adaptées aux besoins en développement de vos applications et sites web',
-  'As a full-stack web developer, I love coding cutting-edge web applications': 'En tant que développeur web full-stack, j\'adore développer des applications web de pointe'
+  'As a full-stack web developer, I love coding cutting-edge web applications': 'En tant que développeur web full-stack, j\'adore développer des applications web de pointe',
+  'Learn more': 'En savoir plus',
 };
 
 export default FR;

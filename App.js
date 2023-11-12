@@ -187,6 +187,7 @@ const TopPageBox = ({ children = <></> } = {}) => {
 
   return (
     <Box
+      id="top-container"
       component="main"
       sx={{
         overflowX: 'hidden',

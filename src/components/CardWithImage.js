@@ -1,10 +1,14 @@
 import React from 'react';
 import {
+  Link as ReactRouterLink,
+} from 'react-router-dom';
+import {
   Box,
   Card,
   CardContent,
   CardMedia,
   Paper,
+  Button,
   Typography,
 } from '@mui/material';
 
@@ -17,6 +21,8 @@ const CardWithImage = ({
   imageMaxWidth = 100,
   t = (s) => s,
   cardSx = {},
+  buttonText = '',
+  buttonLink = '',
 } = {}) => (
   <Card
     sx={{
@@ -53,6 +59,15 @@ const CardWithImage = ({
           >
             {t(description)}
           </Typography>
+          {buttonText && (
+            <Button
+              component={ReactRouterLink}
+              to={buttonLink}
+              variant="outlined"
+            >
+              {t(buttonText)}
+            </Button>
+          )}
         </CardContent>
       </Box>
     )}

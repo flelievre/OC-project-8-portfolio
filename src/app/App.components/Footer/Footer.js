@@ -24,6 +24,7 @@ const Footer = () => {
     t,
     routesOfLanguage,
     generateAppRoute,
+    redirectAppTo,
   } = useFooter() || {};
   return (
     <Paper
