@@ -1,0 +1,20 @@
+{
+  "name": "mon-vieux-grimoir-backend",
+  "version": "1.0.0",
+  "description": "openclassroom project",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "assert": "^2.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "http": "^0.0.1-security"
+  },
+  "scripts": {
+    "start": "cross-env PORT=4000 MONGODB_USERNAME=admin MONGODB_PASSWORD=uRdOmLOlj1QBLsnU MONGODB_DB=monvieuxgrimoir JWT_SECRET=3e2bcd859f725d239546c7d5a91eaf554438fd3dff167317056e64ec13fddb0d node ./src/index.js"
+  }
+}
