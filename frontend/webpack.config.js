@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './client.js',
@@ -31,6 +32,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].min.css',
+    }),
+    new Dotenv({
+      path: process.env.NODE_ENV === 'production' ? path.resolve(__dirname, '.env.production') : path.resolve(__dirname, '.env.development'),
     }),
   ],
   optimization: {

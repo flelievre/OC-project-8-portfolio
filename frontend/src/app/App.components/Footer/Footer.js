@@ -54,7 +54,7 @@ const Footer = () => {
                   aria-label={t('Navigate to francois\'s LinkedIn profile')}
                 >
                   <Button size="small" aria-label={t('Navigate to francois\'s LinkedIn profile')}>
-                    <Icon icon="ri:linkedin-line" width={50} height={50} aria-hidden="true" />
+                    <Icon icon="ri:linkedin-line" width={25} height={25} aria-hidden="true" />
                   </Button>
                 </a>
               </Container>

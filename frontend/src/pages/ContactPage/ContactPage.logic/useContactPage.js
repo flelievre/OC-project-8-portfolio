@@ -96,7 +96,7 @@ const useContactPagePageLogic = () => {
     } else if (!isSent) {
       try {
         setIsLoading(true);
-        const response = await fetch('http://localhost:4000/contact', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/contact`, {
           method: 'POST',
           headers: {
               'Accept': 'application/json',

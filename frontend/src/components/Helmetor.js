@@ -30,7 +30,7 @@ const Helmetor = ({
     fullUrl,
   } = useContext(WebAppContext);
 
-  const metaTitle = `François -${routeMetaTitle ? ` ${t(routeMetaTitle)} |` : ''}`;
+  const metaTitle = `François -${routeMetaTitle ? ` ${t(routeMetaTitle)}` : ''}`;
   
   const metaDescription = t(
     routeMetaDescription,

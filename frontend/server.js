@@ -149,7 +149,7 @@ const handleRender = async (req, res) => {
 
   const isPathErrorPath = isRouteErrorRoute;
 
-  const metaTitle = `François -${routeMetaTitle ? ` ${t(routeMetaTitle)} |` : ''}`;
+  const metaTitle = `François -${routeMetaTitle ? ` ${t(routeMetaTitle)}` : ''}`;
 
   const metaDescription = t(
     routeMetaDescription,
@@ -265,6 +265,7 @@ app.use('/sitemap.xml', async (req, res, next) => {
           path = '',
         }) => (
           path !== '*'
+          && !path.includes('/:projectId')
         ))
         .map(({
           path = '',
@@ -318,7 +319,6 @@ app.use((req, res, next) => {
 
 // Middleware #1 to set language cookie if requested
 app.use((req, res, next) => {
-  console.log('Middleware #1');
   const urlParts = req.path.split('/');
   const langCode = (urlParts.length > 1)
     ? urlParts[1]
