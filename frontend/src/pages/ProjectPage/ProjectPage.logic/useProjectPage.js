@@ -30,7 +30,7 @@ const useProjectPage = () => {
     subtitle = '',
     mission = '',
     skillsAcquired = [],
-    details = [],
+    difficulties = [],
     githubLink = '',
   } = projectInfos;
 
@@ -47,7 +47,7 @@ const useProjectPage = () => {
     subtitle,
     mission,
     skillsAcquired,
-    details,
+    difficulties,
     githubLink,
     isMatchingAProject,
   };

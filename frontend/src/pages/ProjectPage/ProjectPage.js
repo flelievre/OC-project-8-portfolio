@@ -22,7 +22,7 @@ const ProjectPage = () => {
     subtitle,
     mission,
     skillsAcquired,
-    details,
+    difficulties,
     githubLink,
     isMatchingAProject,
   } = useProjectPage() || {};
@@ -98,10 +98,10 @@ const ProjectPage = () => {
           component="h3"
           variant="h4"
         >
-          {t('Details')}
+          {t('Difficulties')}
         </Typography>
         <List>
-          {details.map((detail, index) => (
+          {difficulties.map((difficulty, index) => (
             <ListItem
               key={`detail-${index}`}
               sx={{
@@ -109,7 +109,7 @@ const ProjectPage = () => {
               }}
             >
               <ListItemText
-                primary={t(detail)}
+                primary={t(difficulty)}
               />
             </ListItem>
           ))}

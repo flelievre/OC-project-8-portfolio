@@ -17,10 +17,12 @@ const PROJECTS_INFOS = [
       'Integrate graphical content according to a layout with HTML and CSS',
       'Setting up a front-end development environment',
     ],
-    details: [
-      'The project involved the development of a travel agency website with the goal of coding the website using HTML and CSS*p*',
+    difficulties: [
+      'Positioning elements is a difficult task at first glance*p* I had trouble aligning sections consistently, especially in a responsive view*p* Fortunately, by immersing myself in Flexbox and CSS Grid, I was able to overcome these difficulties, creating complex layouts with greater ease*p*',
       '',
-      'During the course of the project, various skills were acquired, including versioning a project with Git and GitHub, implementing a responsive interface with HTML and CSS, integrating graphical content based on a layout with HTML and CSS, and setting up a front-end development environment*p*',
+      'Another obstacle was inconsistent rendering on different browsers*p* Initially, my design looked perfect on Chrome, but fell apart on Firefox or Safari*p* Using vendor prefixes and rigorous testing across multiple browsers helped me resolve these compatibility issues*p*',
+      '',
+      'Finally, I had to refine my CSS selectors to avoid unexpected conflicts due to inheritance and cascading*p* By deepening my knowledge of CSS specificity, I was able to create a consistent and predictable style throughout the site*p*',
     ],
     githubLink: 'https://github.com/flelievre/OC-project2-booki',
   },
@@ -42,7 +44,7 @@ const PROJECTS_INFOS = [
       'Debug a website using Chrome Dev-Tools',
       'Write a test script to test a website',
     ],
-    details: [
+    difficulties: [
       'The original website had numerous errors and questionable practices, making it a perfect example of a situation that needed correction*p* I undertook significant work to address these issues, with the goal of not only achieving an excellent audit tool rating but also discovering best practices for improving SEO and user experience*p*',
       '',
       'Everything was in disarray, and untangling it all was challenging*p* I meticulously examined HTML, CSS, jQuery, Bootstrap, and other aspects, removing, recoding, or reorganizing each element*p*',

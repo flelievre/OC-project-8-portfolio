@@ -38,7 +38,7 @@ const contactFormHandle = async (req, res) => {
       } = {},
     } = e || {};
     
-    console.error(e);
+    console.error(JSON.stringify(e));
     console.error(`[-] ${message}`);
 
     res.status(400).send({

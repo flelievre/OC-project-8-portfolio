@@ -35,35 +35,52 @@ const Footer = () => {
     >
       <Container sx={{ mt: 5, display: 'flex', position: 'relative' }}>
         <Grid container spacing={5}>
-          <Grid item md={4} xs={12} justifyContent="center">
-            <Stack>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/openclassrooms-bucket.appspot.com/o/portfolio-web-developer%2Ftech%2Flogo-francois.png.webp?alt=media&token=de922cab-7eba-4e72-8482-3c3f2cc246e9"
-                alt="François logo"
-                style={{
-                  width: 175,
-                  cursor: 'pointer',
-                }}
-                onClick={() => redirectAppTo({ route: routes.HOME })}
-              />
-              <Container>
-                <a
-                  href="https://www.linkedin.com/in/francois-lelievre-/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={t('Navigate to francois\'s LinkedIn profile')}
-                >
-                  <Button size="small" aria-label={t('Navigate to francois\'s LinkedIn profile')}>
-                    <Icon icon="ri:linkedin-line" width={25} height={25} aria-hidden="true" />
-                  </Button>
-                </a>
-              </Container>
-            </Stack>
+          <Grid
+            item
+            md={4}
+            sm={12}
+            xs={12}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid
+              container
+              spacing={2}
+              justifyContent="center"
+              alignItems="center"
+              direction="column"
+            >
+              <Stack>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/openclassrooms-bucket.appspot.com/o/portfolio-web-developer%2Ftech%2Flogo-francois.png.webp?alt=media&token=de922cab-7eba-4e72-8482-3c3f2cc246e9"
+                  alt="François logo"
+                  style={{
+                    width: 175,
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => redirectAppTo({ route: routes.HOME })}
+                />
+                <Container>
+                  <a
+                    href="https://www.linkedin.com/in/francois-lelievre-/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t('Navigate to francois\'s LinkedIn profile')}
+                    style={{ paddingLeft: '25px' }}
+                  >
+                    <Button size="small" aria-label={t('Navigate to francois\'s LinkedIn profile')}>
+                      <Icon icon="ri:linkedin-line" width={25} height={25} aria-hidden="true" />
+                    </Button>
+                  </a>
+                </Container>
+              </Stack>
+            </Grid>
           </Grid>
           <Grid
             item
             md={4}
             xs={12}
+            sm={12}
             component="section"
             justifyContent="center"
             alignItems="center"
@@ -99,13 +116,14 @@ const Footer = () => {
             item
             md={4}
             xs={12}
+            sm={12}
             component="section"
           >
             <Grid
               container
               spacing={2}
-              justifyContent="flex-end"
-              alignItems="flex-end"
+              justifyContent="center"
+              alignItems="center"
               direction="column"
             >
               <Typography component="h2" variant="h5">

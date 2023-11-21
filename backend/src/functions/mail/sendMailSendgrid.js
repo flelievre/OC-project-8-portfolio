@@ -5,6 +5,8 @@ const sgMail = require('@sendgrid/mail')
 
 sgMail.setApiKey(SENDGRID_API_KEY)
 
+console.log(SENDGRID_API_KEY);
+
 const sendMailSendgrid = ({
   fromEmail = 'francois.lelievre@komdab.net',
   fromName = 'François - Développeur Web',

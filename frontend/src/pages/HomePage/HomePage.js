@@ -42,6 +42,135 @@ const HomePage = () => {
         contactRouteUrl={contactRouteUrl}
         t={t}
       />
+
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        component="section"
+      >
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={12}
+        >
+          <Grid
+            container
+            spacing={2}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid
+              item
+              xs={10}
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <Stack>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  sx={{
+                    fontWeight: 700,
+                    backgroundImage: 'linear-gradient(90deg,#9d77f4 5%,#4D67F6 43%,#2AD7FB 95%)',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  {t('Background')}
+                </Typography>
+                <Typography
+                  variant="h4"
+                  component="h2"
+                >
+                  {t('From general engineer to web developer')}
+                </Typography>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={12}
+          sx={{
+            mb: 10,
+          }}
+        >
+          <Grid
+            container
+            spacing={2}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid
+              item
+              xs={12}
+              sm={3}
+            >
+              <CardWithImage
+                imageUrl=""
+                imageAlt=""
+                header={t('INSA RENNES')}
+                description={t('2010 - 2016 | Engineer degree')}
+                t={t}
+                imageMaxWidth={110}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={3}
+            >
+              <CardWithImage
+                imageUrl=""
+                imageAlt=""
+                header={t('AUDENCIA NANTES')}
+                description={t('2016 | Business engineer degree')}
+                t={t}
+                imageMaxWidth={110}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={3}
+            >
+              <CardWithImage
+                imageUrl=""
+                imageAlt=""
+                header={t('Wavestone')}
+                description={t('2016 - 2023 | Cybersecurity consultant')}
+                t={t}
+                imageMaxWidth={110}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={3}
+            >
+              <CardWithImage
+                imageUrl=""
+                imageAlt=""
+                header={t('OpenClassrooms')}
+                description={t('2023 | Web development')}
+                t={t}
+                imageMaxWidth={110}
+              />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
       <Grid
         container
         spacing={2}
@@ -69,13 +198,15 @@ const HomePage = () => {
                 fontWeight: 700,
                 backgroundImage: 'linear-gradient(90deg,#9d77f4 5%,#4D67F6 43%,#2AD7FB 95%)',
                 WebkitTextFillColor: 'transparent',
+                color: 'transparent',
                 backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
               }}
             >
               {t('Web development technologies I master')}
             </strong>
             <br />
-            {t('are necessarily adapted to your web applications and sites development needs')}
+            {t('are necessarily adapted to your JS web applications and JS sites development needs')}
           </Typography>
           <TechnologiesLogos
             t={t}

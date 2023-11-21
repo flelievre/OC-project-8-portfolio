@@ -130,7 +130,7 @@ const TitlesSection = ({
               imageUrl="https://firebasestorage.googleapis.com/v0/b/openclassrooms-bucket.appspot.com/o/portfolio-web-developer%2Flogo-google.png.webp?alt=media&token=992b8e0e-2135-498e-b8a3-f36d2449a016"
               imageAlt="Google logo"
               header="Web applications optimized SEO"
-              description="Expert in SEO for web applications, I ensure the best visibility to your web applications"
+              description="With a know-how in SEO for web applications, I ensure a strong visibility to your web applications"
               t={t}
               imageMaxWidth={125}
             />
