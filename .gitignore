@@ -11,3 +11,5 @@ backups/
 temp/
 randomFileName12345*
 *gitConfidentialPassFile.sh
+.env.production
+.env.development
